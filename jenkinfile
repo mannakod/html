@@ -7,7 +7,6 @@ pipeline {
                 echo 'copying...'
                 git url: "https://github.com/mannakod/html.git", branch: "main"
                 echo "copy done"
-                #sh "sudo apt update; sudo apt install nginx -y"
                 sh "cp index.html /var/www/html/"
             }
         }
